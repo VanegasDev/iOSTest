@@ -14,16 +14,20 @@ struct HomeView: View {
         ScrollView {
             LazyVStack {
                 ForEach(viewModel.shows) { show in
-                    ShowItemView(show: show)
-                        .shadow(radius: 7)
-                        .padding(.vertical, 8)
-                        .padding(.horizontal, 16)
+                    NavigationLink {
+                        ShowInformationView(viewModel: ShowInformationViewModel(dependencies: ShowInformationViewModelDependencies(),
+                                                                                showId: show.id))
+                    } label: {
+                        ShowItemView(show: show)
+                            .shadow(radius: 7)
+                            .padding(.vertical, 8)
+                            .padding(.horizontal, 16)
+                    }
                 }
             }
         }
         .edgesIgnoringSafeArea(.bottom)
         .activityIndicator(isLoading: viewModel.isLoading)
-        .background(Color(ColorAsset.Main.primary2))
         .onAppear(perform: viewModel.fetchShowList)
         .navigationTitle("Show List")
     }

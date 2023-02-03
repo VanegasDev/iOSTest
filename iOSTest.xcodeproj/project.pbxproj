@@ -26,6 +26,11 @@
 		C0A82D5C298DA543000B5F7A /* ShowsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A82D5B298DA543000B5F7A /* ShowsService.swift */; };
 		C0A82D5F298DA63F000B5F7A /* ActivityIndicatorModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A82D5E298DA63F000B5F7A /* ActivityIndicatorModifier.swift */; };
 		C0A82D61298DA684000B5F7A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A82D60298DA684000B5F7A /* HomeViewModel.swift */; };
+		C0A82D63298DB3CB000B5F7A /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A82D62298DB3CB000B5F7A /* Show.swift */; };
+		C0A82D67298DB51A000B5F7A /* ShowInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A82D66298DB51A000B5F7A /* ShowInformationView.swift */; };
+		C0A82D69298DB636000B5F7A /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A82D68298DB636000B5F7A /* HeaderView.swift */; };
+		C0A82D6B298DBA1C000B5F7A /* ShowInformationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A82D6A298DBA1C000B5F7A /* ShowInformationViewModel.swift */; };
+		C0A82D6D298DBBEF000B5F7A /* HiddenModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A82D6C298DBBEF000B5F7A /* HiddenModifier.swift */; };
 		C0C495DA298D810800864E30 /* iOSTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C495D9298D810800864E30 /* iOSTestApp.swift */; };
 		C0C495DE298D810900864E30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0C495DD298D810900864E30 /* Assets.xcassets */; };
 		C0C495E1298D810900864E30 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0C495E0298D810900864E30 /* Preview Assets.xcassets */; };
@@ -50,6 +55,11 @@
 		C0A82D5B298DA543000B5F7A /* ShowsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsService.swift; sourceTree = "<group>"; };
 		C0A82D5E298DA63F000B5F7A /* ActivityIndicatorModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorModifier.swift; sourceTree = "<group>"; };
 		C0A82D60298DA684000B5F7A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		C0A82D62298DB3CB000B5F7A /* Show.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Show.swift; sourceTree = "<group>"; };
+		C0A82D66298DB51A000B5F7A /* ShowInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowInformationView.swift; sourceTree = "<group>"; };
+		C0A82D68298DB636000B5F7A /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		C0A82D6A298DBA1C000B5F7A /* ShowInformationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowInformationViewModel.swift; sourceTree = "<group>"; };
+		C0A82D6C298DBBEF000B5F7A /* HiddenModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenModifier.swift; sourceTree = "<group>"; };
 		C0C495D6298D810800864E30 /* iOSTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0C495D9298D810800864E30 /* iOSTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSTestApp.swift; sourceTree = "<group>"; };
 		C0C495DD298D810900864E30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				C0A82D38298D9226000B5F7A /* HomeView.swift */,
+				C0A82D66298DB51A000B5F7A /* ShowInformationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -81,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				C0A82D60298DA684000B5F7A /* HomeViewModel.swift */,
+				C0A82D6A298DBA1C000B5F7A /* ShowInformationViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -89,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				C0A82D3B298D9543000B5F7A /* ShowItemView.swift */,
+				C0A82D68298DB636000B5F7A /* HeaderView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -98,6 +111,7 @@
 			children = (
 				C0A82D3E298D9556000B5F7A /* ShowPreview.swift */,
 				C0A82D40298D9593000B5F7A /* ImageInformation.swift */,
+				C0A82D62298DB3CB000B5F7A /* Show.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -166,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				C0A82D5E298DA63F000B5F7A /* ActivityIndicatorModifier.swift */,
+				C0A82D6C298DBBEF000B5F7A /* HiddenModifier.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -324,17 +339,22 @@
 				C0C495DA298D810800864E30 /* iOSTestApp.swift in Sources */,
 				C0A82D59298DA444000B5F7A /* ShowRequest.swift in Sources */,
 				C0A82D5F298DA63F000B5F7A /* ActivityIndicatorModifier.swift in Sources */,
+				C0A82D67298DB51A000B5F7A /* ShowInformationView.swift in Sources */,
 				C0A82D3C298D9543000B5F7A /* ShowItemView.swift in Sources */,
+				C0A82D63298DB3CB000B5F7A /* Show.swift in Sources */,
 				C0A82D56298DA1F2000B5F7A /* NetworkManager.swift in Sources */,
 				C0A82D46298D96C6000B5F7A /* ColorAssets.swift in Sources */,
+				C0A82D6D298DBBEF000B5F7A /* HiddenModifier.swift in Sources */,
 				C0A82D49298D9AA6000B5F7A /* Color+Extensions.swift in Sources */,
 				C0A82D5C298DA543000B5F7A /* ShowsService.swift in Sources */,
 				C0A82D4E298D9C96000B5F7A /* MoyaManager.swift in Sources */,
 				C0A82D44298D9651000B5F7A /* ImageAssets.swift in Sources */,
 				C0A82D39298D9226000B5F7A /* HomeView.swift in Sources */,
+				C0A82D69298DB636000B5F7A /* HeaderView.swift in Sources */,
 				C0A82D3F298D9556000B5F7A /* ShowPreview.swift in Sources */,
 				C0A82D41298D9593000B5F7A /* ImageInformation.swift in Sources */,
 				C0A82D51298DA102000B5F7A /* Configuration.swift in Sources */,
+				C0A82D6B298DBA1C000B5F7A /* ShowInformationViewModel.swift in Sources */,
 				C0A82D54298DA158000B5F7A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

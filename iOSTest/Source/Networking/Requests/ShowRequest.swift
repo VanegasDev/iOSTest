@@ -10,6 +10,7 @@ import Moya
 
 enum ShowRequest: AppTargetType {
     case shows
+    case show(id: Int)
 }
 
 extension ShowRequest {
@@ -17,19 +18,21 @@ extension ShowRequest {
         switch self {
         case .shows:
             return "/shows"
+        case let .show(id):
+            return "/shows/\(id)"
         }
     }
     
     var requestMethod: NetworkMethod {
         switch self {
-        case .shows:
+        case .shows, .show:
             return .get
         }
     }
     
     var task: Task {
         switch self {
-        case .shows:
+        case .shows, .show:
             return .requestPlain
         }
     }
