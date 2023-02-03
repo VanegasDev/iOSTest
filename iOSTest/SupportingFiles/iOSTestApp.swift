@@ -11,7 +11,9 @@ import SwiftUI
 struct iOSTestApp: App {
     var body: some Scene {
         WindowGroup {
-            Text("Hola Mundo")
+            NavigationView {
+                HomeView()
+            }
         }
     }
 }

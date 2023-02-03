@@ -23,6 +23,7 @@ enum ColorAsset {
         case primary1 = "primary-1"
         case primary2 = "primary-2"
         case secondary1 = "secondary-1"
+        case secondary2 = "secondary-2"
         case complementary1 = "complementary-1"
         case complementary2 = "complementary-2"
         

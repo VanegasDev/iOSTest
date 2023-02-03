@@ -22,6 +22,10 @@
 		C0A82D51298DA102000B5F7A /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A82D50298DA102000B5F7A /* Configuration.swift */; };
 		C0A82D54298DA158000B5F7A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A82D53298DA158000B5F7A /* Constants.swift */; };
 		C0A82D56298DA1F2000B5F7A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A82D55298DA1F2000B5F7A /* NetworkManager.swift */; };
+		C0A82D59298DA444000B5F7A /* ShowRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A82D58298DA444000B5F7A /* ShowRequest.swift */; };
+		C0A82D5C298DA543000B5F7A /* ShowsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A82D5B298DA543000B5F7A /* ShowsService.swift */; };
+		C0A82D5F298DA63F000B5F7A /* ActivityIndicatorModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A82D5E298DA63F000B5F7A /* ActivityIndicatorModifier.swift */; };
+		C0A82D61298DA684000B5F7A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A82D60298DA684000B5F7A /* HomeViewModel.swift */; };
 		C0C495DA298D810800864E30 /* iOSTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C495D9298D810800864E30 /* iOSTestApp.swift */; };
 		C0C495DE298D810900864E30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0C495DD298D810900864E30 /* Assets.xcassets */; };
 		C0C495E1298D810900864E30 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0C495E0298D810900864E30 /* Preview Assets.xcassets */; };
@@ -42,6 +46,10 @@
 		C0A82D50298DA102000B5F7A /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		C0A82D53298DA158000B5F7A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C0A82D55298DA1F2000B5F7A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		C0A82D58298DA444000B5F7A /* ShowRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRequest.swift; sourceTree = "<group>"; };
+		C0A82D5B298DA543000B5F7A /* ShowsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsService.swift; sourceTree = "<group>"; };
+		C0A82D5E298DA63F000B5F7A /* ActivityIndicatorModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorModifier.swift; sourceTree = "<group>"; };
+		C0A82D60298DA684000B5F7A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		C0C495D6298D810800864E30 /* iOSTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0C495D9298D810800864E30 /* iOSTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSTestApp.swift; sourceTree = "<group>"; };
 		C0C495DD298D810900864E30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -72,6 +80,7 @@
 		C0A82D36298D9214000B5F7A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				C0A82D60298DA684000B5F7A /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -122,6 +131,7 @@
 		C0A82D4F298DA0F9000B5F7A /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				C0A82D57298DA439000B5F7A /* Requests */,
 				C0A82D50298DA102000B5F7A /* Configuration.swift */,
 				C0A82D55298DA1F2000B5F7A /* NetworkManager.swift */,
 			);
@@ -134,6 +144,30 @@
 				C0A82D53298DA158000B5F7A /* Constants.swift */,
 			);
 			path = Configuration;
+			sourceTree = "<group>";
+		};
+		C0A82D57298DA439000B5F7A /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				C0A82D58298DA444000B5F7A /* ShowRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		C0A82D5A298DA538000B5F7A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C0A82D5B298DA543000B5F7A /* ShowsService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C0A82D5D298DA62F000B5F7A /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				C0A82D5E298DA63F000B5F7A /* ActivityIndicatorModifier.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 		C0C495CD298D810800864E30 = {
@@ -185,6 +219,7 @@
 		C0C495E8298D814800864E30 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				C0A82D5D298DA62F000B5F7A /* Modifiers */,
 				C0A82D47298D9A93000B5F7A /* Extensions */,
 				C0A82D42298D963E000B5F7A /* DesignSystem */,
 				C0A82D3A298D950B000B5F7A /* CustomViews */,
@@ -201,6 +236,7 @@
 				C0A82D4F298DA0F9000B5F7A /* Networking */,
 				C0A82D4C298D9C8C000B5F7A /* DependencyManager */,
 				C0A82D3D298D9547000B5F7A /* Models */,
+				C0A82D5A298DA538000B5F7A /* Services */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -283,12 +319,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0A82D61298DA684000B5F7A /* HomeViewModel.swift in Sources */,
 				C0A82D4B298D9B28000B5F7A /* Image+Extensions.swift in Sources */,
 				C0C495DA298D810800864E30 /* iOSTestApp.swift in Sources */,
+				C0A82D59298DA444000B5F7A /* ShowRequest.swift in Sources */,
+				C0A82D5F298DA63F000B5F7A /* ActivityIndicatorModifier.swift in Sources */,
 				C0A82D3C298D9543000B5F7A /* ShowItemView.swift in Sources */,
 				C0A82D56298DA1F2000B5F7A /* NetworkManager.swift in Sources */,
 				C0A82D46298D96C6000B5F7A /* ColorAssets.swift in Sources */,
 				C0A82D49298D9AA6000B5F7A /* Color+Extensions.swift in Sources */,
+				C0A82D5C298DA543000B5F7A /* ShowsService.swift in Sources */,
 				C0A82D4E298D9C96000B5F7A /* MoyaManager.swift in Sources */,
 				C0A82D44298D9651000B5F7A /* ImageAssets.swift in Sources */,
 				C0A82D39298D9226000B5F7A /* HomeView.swift in Sources */,

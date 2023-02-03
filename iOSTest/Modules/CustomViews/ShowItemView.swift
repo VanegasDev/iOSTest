@@ -23,7 +23,7 @@ struct ShowItemView: View {
             }
             .frame(width: 110)
             
-            VStack(alignment: .leading) {
+            VStack(alignment: .leading, spacing: 6) {
                 HStack {
                     ForEach(show.genres.prefix(2), id: \.self) { genre in
                         Text(genre)

@@ -8,13 +8,31 @@
 import SwiftUI
 
 struct HomeView: View {
+    @StateObject var viewModel = HomeViewModel(dependencies: HomeViewModelDependencies())
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView {
+            LazyVStack {
+                ForEach(viewModel.shows) { show in
+                    ShowItemView(show: show)
+                        .shadow(radius: 7)
+                        .padding(.vertical, 8)
+                        .padding(.horizontal, 16)
+                }
+            }
+        }
+        .edgesIgnoringSafeArea(.bottom)
+        .activityIndicator(isLoading: viewModel.isLoading)
+        .background(Color(ColorAsset.Main.primary2))
+        .onAppear(perform: viewModel.fetchShowList)
+        .navigationTitle("Show List")
     }
 }
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        NavigationView {
+            HomeView()
+        }
     }
 }
