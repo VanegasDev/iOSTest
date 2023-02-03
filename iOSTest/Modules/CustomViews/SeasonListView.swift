@@ -19,7 +19,12 @@ struct SeasonListView: View {
             ScrollView(.horizontal) {
                 LazyHStack {
                     ForEach(episodes) { episode in
-                        EpisodeItemView(episode: episode)
+                        NavigationLink {
+                            EpisodeInformationView(viewModel: EpisodeInformationViewModel(dependencies: EpisodeInformationViewModelDependencies(),
+                                                                                          episodeId: episode.id))
+                        } label: {
+                            EpisodeItemView(episode: episode)
+                        }
                     }
                 }
             }

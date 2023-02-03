@@ -34,6 +34,11 @@
 		C0A82D6F298DBF54000B5F7A /* EpisodePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A82D6E298DBF54000B5F7A /* EpisodePreview.swift */; };
 		C0A82D71298DBF89000B5F7A /* EpisodeItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A82D70298DBF89000B5F7A /* EpisodeItemView.swift */; };
 		C0A82D73298DC17C000B5F7A /* SeasonListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A82D72298DC17C000B5F7A /* SeasonListView.swift */; };
+		C0A82D75298DC848000B5F7A /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A82D74298DC848000B5F7A /* Episode.swift */; };
+		C0A82D77298DC884000B5F7A /* EpisodeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A82D76298DC884000B5F7A /* EpisodeRequest.swift */; };
+		C0A82D79298DC8D0000B5F7A /* EpisodesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A82D78298DC8D0000B5F7A /* EpisodesService.swift */; };
+		C0A82D7B298DC959000B5F7A /* EpisodeInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A82D7A298DC959000B5F7A /* EpisodeInformationView.swift */; };
+		C0A82D7D298DC966000B5F7A /* EpisodeInformationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A82D7C298DC966000B5F7A /* EpisodeInformationViewModel.swift */; };
 		C0C495DA298D810800864E30 /* iOSTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C495D9298D810800864E30 /* iOSTestApp.swift */; };
 		C0C495DE298D810900864E30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0C495DD298D810900864E30 /* Assets.xcassets */; };
 		C0C495E1298D810900864E30 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0C495E0298D810900864E30 /* Preview Assets.xcassets */; };
@@ -66,6 +71,11 @@
 		C0A82D6E298DBF54000B5F7A /* EpisodePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodePreview.swift; sourceTree = "<group>"; };
 		C0A82D70298DBF89000B5F7A /* EpisodeItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeItemView.swift; sourceTree = "<group>"; };
 		C0A82D72298DC17C000B5F7A /* SeasonListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonListView.swift; sourceTree = "<group>"; };
+		C0A82D74298DC848000B5F7A /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		C0A82D76298DC884000B5F7A /* EpisodeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeRequest.swift; sourceTree = "<group>"; };
+		C0A82D78298DC8D0000B5F7A /* EpisodesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesService.swift; sourceTree = "<group>"; };
+		C0A82D7A298DC959000B5F7A /* EpisodeInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeInformationView.swift; sourceTree = "<group>"; };
+		C0A82D7C298DC966000B5F7A /* EpisodeInformationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeInformationViewModel.swift; sourceTree = "<group>"; };
 		C0C495D6298D810800864E30 /* iOSTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0C495D9298D810800864E30 /* iOSTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSTestApp.swift; sourceTree = "<group>"; };
 		C0C495DD298D810900864E30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -90,6 +100,7 @@
 			children = (
 				C0A82D38298D9226000B5F7A /* HomeView.swift */,
 				C0A82D66298DB51A000B5F7A /* ShowInformationView.swift */,
+				C0A82D7A298DC959000B5F7A /* EpisodeInformationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -99,6 +110,7 @@
 			children = (
 				C0A82D60298DA684000B5F7A /* HomeViewModel.swift */,
 				C0A82D6A298DBA1C000B5F7A /* ShowInformationViewModel.swift */,
+				C0A82D7C298DC966000B5F7A /* EpisodeInformationViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -121,6 +133,7 @@
 				C0A82D40298D9593000B5F7A /* ImageInformation.swift */,
 				C0A82D62298DB3CB000B5F7A /* Show.swift */,
 				C0A82D6E298DBF54000B5F7A /* EpisodePreview.swift */,
+				C0A82D74298DC848000B5F7A /* Episode.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -173,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				C0A82D58298DA444000B5F7A /* ShowRequest.swift */,
+				C0A82D76298DC884000B5F7A /* EpisodeRequest.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -181,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				C0A82D5B298DA543000B5F7A /* ShowsService.swift */,
+				C0A82D78298DC8D0000B5F7A /* EpisodesService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -350,14 +365,18 @@
 				C0A82D6F298DBF54000B5F7A /* EpisodePreview.swift in Sources */,
 				C0A82D73298DC17C000B5F7A /* SeasonListView.swift in Sources */,
 				C0A82D59298DA444000B5F7A /* ShowRequest.swift in Sources */,
+				C0A82D75298DC848000B5F7A /* Episode.swift in Sources */,
 				C0A82D5F298DA63F000B5F7A /* ActivityIndicatorModifier.swift in Sources */,
 				C0A82D67298DB51A000B5F7A /* ShowInformationView.swift in Sources */,
 				C0A82D3C298D9543000B5F7A /* ShowItemView.swift in Sources */,
 				C0A82D63298DB3CB000B5F7A /* Show.swift in Sources */,
+				C0A82D77298DC884000B5F7A /* EpisodeRequest.swift in Sources */,
 				C0A82D56298DA1F2000B5F7A /* NetworkManager.swift in Sources */,
 				C0A82D46298D96C6000B5F7A /* ColorAssets.swift in Sources */,
 				C0A82D6D298DBBEF000B5F7A /* HiddenModifier.swift in Sources */,
+				C0A82D7B298DC959000B5F7A /* EpisodeInformationView.swift in Sources */,
 				C0A82D49298D9AA6000B5F7A /* Color+Extensions.swift in Sources */,
+				C0A82D79298DC8D0000B5F7A /* EpisodesService.swift in Sources */,
 				C0A82D5C298DA543000B5F7A /* ShowsService.swift in Sources */,
 				C0A82D4E298D9C96000B5F7A /* MoyaManager.swift in Sources */,
 				C0A82D44298D9651000B5F7A /* ImageAssets.swift in Sources */,
@@ -368,6 +387,7 @@
 				C0A82D51298DA102000B5F7A /* Configuration.swift in Sources */,
 				C0A82D6B298DBA1C000B5F7A /* ShowInformationViewModel.swift in Sources */,
 				C0A82D54298DA158000B5F7A /* Constants.swift in Sources */,
+				C0A82D7D298DC966000B5F7A /* EpisodeInformationViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
