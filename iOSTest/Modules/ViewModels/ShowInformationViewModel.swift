@@ -13,6 +13,8 @@ class ShowInformationViewModel: ObservableObject {
     
     @Published var show: Show?
     @Published var isLoading = false
+    @Published var episodes: [Int: [EpisodePreview]] = [:]
+    @Published var seasons: [Int] = []
     
     private let dependencies: Dependencies
     private let showId: Int
@@ -37,6 +39,24 @@ class ShowInformationViewModel: ObservableObject {
                 self?.isLoading = false
             } receiveValue: { [weak self] showInformation in
                 self?.show = showInformation
+            }
+            .store(in: &cancellables)
+    }
+    
+    func fetchShowEpisodes() {
+        dependencies
+            .showsService
+            .fetchShowEpisodes(showId: showId)
+            .sink { response in
+                if case let .failure(error) = response {
+                    print("ERROR: \(error.localizedDescription)")
+                }
+            } receiveValue: { [weak self] episodes in
+                let dictionary = Dictionary(grouping: episodes) { $0.season }
+                let seasons = dictionary.map { $0.key }
+                
+                self?.seasons = seasons
+                self?.episodes = dictionary
             }
             .store(in: &cancellables)
     }

@@ -31,6 +31,9 @@
 		C0A82D69298DB636000B5F7A /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A82D68298DB636000B5F7A /* HeaderView.swift */; };
 		C0A82D6B298DBA1C000B5F7A /* ShowInformationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A82D6A298DBA1C000B5F7A /* ShowInformationViewModel.swift */; };
 		C0A82D6D298DBBEF000B5F7A /* HiddenModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A82D6C298DBBEF000B5F7A /* HiddenModifier.swift */; };
+		C0A82D6F298DBF54000B5F7A /* EpisodePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A82D6E298DBF54000B5F7A /* EpisodePreview.swift */; };
+		C0A82D71298DBF89000B5F7A /* EpisodeItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A82D70298DBF89000B5F7A /* EpisodeItemView.swift */; };
+		C0A82D73298DC17C000B5F7A /* SeasonListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A82D72298DC17C000B5F7A /* SeasonListView.swift */; };
 		C0C495DA298D810800864E30 /* iOSTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C495D9298D810800864E30 /* iOSTestApp.swift */; };
 		C0C495DE298D810900864E30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0C495DD298D810900864E30 /* Assets.xcassets */; };
 		C0C495E1298D810900864E30 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0C495E0298D810900864E30 /* Preview Assets.xcassets */; };
@@ -60,6 +63,9 @@
 		C0A82D68298DB636000B5F7A /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		C0A82D6A298DBA1C000B5F7A /* ShowInformationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowInformationViewModel.swift; sourceTree = "<group>"; };
 		C0A82D6C298DBBEF000B5F7A /* HiddenModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenModifier.swift; sourceTree = "<group>"; };
+		C0A82D6E298DBF54000B5F7A /* EpisodePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodePreview.swift; sourceTree = "<group>"; };
+		C0A82D70298DBF89000B5F7A /* EpisodeItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeItemView.swift; sourceTree = "<group>"; };
+		C0A82D72298DC17C000B5F7A /* SeasonListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonListView.swift; sourceTree = "<group>"; };
 		C0C495D6298D810800864E30 /* iOSTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0C495D9298D810800864E30 /* iOSTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSTestApp.swift; sourceTree = "<group>"; };
 		C0C495DD298D810900864E30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -102,6 +108,8 @@
 			children = (
 				C0A82D3B298D9543000B5F7A /* ShowItemView.swift */,
 				C0A82D68298DB636000B5F7A /* HeaderView.swift */,
+				C0A82D70298DBF89000B5F7A /* EpisodeItemView.swift */,
+				C0A82D72298DC17C000B5F7A /* SeasonListView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -112,6 +120,7 @@
 				C0A82D3E298D9556000B5F7A /* ShowPreview.swift */,
 				C0A82D40298D9593000B5F7A /* ImageInformation.swift */,
 				C0A82D62298DB3CB000B5F7A /* Show.swift */,
+				C0A82D6E298DBF54000B5F7A /* EpisodePreview.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -337,6 +346,9 @@
 				C0A82D61298DA684000B5F7A /* HomeViewModel.swift in Sources */,
 				C0A82D4B298D9B28000B5F7A /* Image+Extensions.swift in Sources */,
 				C0C495DA298D810800864E30 /* iOSTestApp.swift in Sources */,
+				C0A82D71298DBF89000B5F7A /* EpisodeItemView.swift in Sources */,
+				C0A82D6F298DBF54000B5F7A /* EpisodePreview.swift in Sources */,
+				C0A82D73298DC17C000B5F7A /* SeasonListView.swift in Sources */,
 				C0A82D59298DA444000B5F7A /* ShowRequest.swift in Sources */,
 				C0A82D5F298DA63F000B5F7A /* ActivityIndicatorModifier.swift in Sources */,
 				C0A82D67298DB51A000B5F7A /* ShowInformationView.swift in Sources */,

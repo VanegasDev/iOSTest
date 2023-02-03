@@ -12,6 +12,7 @@ import Combine
 protocol ShowsServiceType {
     func fetchShowList() -> AnyPublisher<[ShowPreview], Error>
     func fetchShowInformation(showId: Int) -> AnyPublisher<Show, Error>
+    func fetchShowEpisodes(showId: Int) -> AnyPublisher<[EpisodePreview], Error>
 }
 
 // MARK: Protocol Composition for DI
@@ -35,6 +36,10 @@ struct ShowsService: ShowsServiceType {
     
     func fetchShowInformation(showId: Int) -> AnyPublisher<Show, Error> {
         dependencies.networkManager.request(ShowRequest.show(id: showId))
+    }
+    
+    func fetchShowEpisodes(showId: Int) -> AnyPublisher<[EpisodePreview], Error> {
+        dependencies.networkManager.request(ShowRequest.showEpisodes(id: showId))
     }
 }
 

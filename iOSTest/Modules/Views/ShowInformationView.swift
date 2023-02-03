@@ -54,11 +54,21 @@ struct ShowInformationView: View {
                     VStack(alignment: .leading, spacing: 8) {
                         Text("Summary")
                             .font(.title2)
+                            .bold()
                         
                         Text(viewModel.show?.summary ?? "")
                     }
                     
-                    Spacer()
+                    VStack(alignment: .leading, spacing: 8) {
+                        Text("Episodes")
+                            .font(.title2)
+                            .bold()
+                        
+                        ForEach(viewModel.seasons, id: \.self) { season in
+                            SeasonListView(season: season, episodes: viewModel.episodes[season] ?? [])
+                        }
+                    }
+                    .isHidden(viewModel.episodes.isEmpty)
                 }
                 .padding(.horizontal, 16)
             }
@@ -66,6 +76,9 @@ struct ShowInformationView: View {
         .activityIndicator(isLoading: viewModel.isLoading)
         .navigationTitle(viewModel.show?.name ?? "")
         .navigationBarTitleDisplayMode(.inline)
-        .onAppear(perform: viewModel.fetchShowInformation)
+        .onAppear {
+            viewModel.fetchShowInformation()
+            viewModel.fetchShowEpisodes()
+        }
     }
 }
