@@ -55,7 +55,7 @@ class ShowInformationViewModel: ObservableObject {
                 let dictionary = Dictionary(grouping: episodes) { $0.season }
                 let seasons = dictionary.map { $0.key }
                 
-                self?.seasons = seasons
+                self?.seasons = seasons.sorted(by: <)
                 self?.episodes = dictionary
             }
             .store(in: &cancellables)
